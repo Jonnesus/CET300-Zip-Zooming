@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: bf3f9980c43241248935d8a59a323fa6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: dontshowagain
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 13804, guid: 0000000000000000e000000000000000, type: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298299
+  packageName: Omni Vehicle Ai
+  packageVersion: 1.4
+  assetPath: Assets/Ash Assets/Welcome-AshDev/AshDeb_WelcomeScreen.uxml
+  uploadId: 742166

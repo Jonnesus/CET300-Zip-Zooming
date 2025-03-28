@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6698d59d066f51d4bb21057d173bcd0b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298299
+  packageName: Omni Vehicle Ai
+  packageVersion: 1.4
+  assetPath: Assets/Ash Assets/Omni Vehicle Ai/Scripts/Scene Managers/TargetFollowSceneManager.cs
+  uploadId: 742166

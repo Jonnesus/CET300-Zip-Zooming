@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c8fbe3c8adda81e4ba9bc0d82c1b5aff
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2655988077585873504
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298299
+  packageName: Omni Vehicle Ai
+  packageVersion: 1.4
+  assetPath: Assets/Ash Assets/Omni Vehicle Ai/Scripts/Script Presets/ContextSteering.preset
+  uploadId: 742166

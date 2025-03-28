@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 21a6121a28646564a8e95a03306e10b0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298299
+  packageName: Omni Vehicle Ai
+  packageVersion: 1.4
+  assetPath: Assets/Ash Assets/Omni Vehicle Ai/Scripts/Demo_Input_Provider_Generated.cs
+  uploadId: 742166

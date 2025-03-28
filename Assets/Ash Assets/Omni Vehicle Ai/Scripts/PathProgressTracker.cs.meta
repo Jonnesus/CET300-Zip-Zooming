@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a44d95fade1e4d24fbd9370e3d30e639
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 298299
+  packageName: Omni Vehicle Ai
+  packageVersion: 1.4
+  assetPath: Assets/Ash Assets/Omni Vehicle Ai/Scripts/PathProgressTracker.cs
+  uploadId: 742166
