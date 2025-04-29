@@ -3,12 +3,10 @@ using System;
 using TMPro;
 using UnityEngine.EventSystems;
 
-public class LapManager : MonoBehaviour
+public class LapManagerPractice : MonoBehaviour
 {
-    [SerializeField] private PosCounter posCounter;
-    [SerializeField] private TextMeshProUGUI currentTimeText, bestTimeText, lapCountText, positionReadoutText;
-    [SerializeField] private GameObject resultsPanel, restartButton;
-    [SerializeField] private int maximumLaps = 3;
+    [SerializeField] private TextMeshProUGUI currentTimeText, bestTimeText, lapCountText;
+    [SerializeField] private int maximumLaps = 999999;
 
     private int minuteCount, secondCount, lapNumber = 1;
     private float milliCount, hiddenCurrentTime, hiddenBestTime;
@@ -18,7 +16,7 @@ public class LapManager : MonoBehaviour
     private void Start()
     {
         bestTimeText.text = "Best: --:--.--";
-        lapCountText.text = "Lap: 1/" + maximumLaps;
+        lapCountText.text = "Lap: 1";
     }
 
     private void Update()
@@ -80,33 +78,6 @@ public class LapManager : MonoBehaviour
         minuteCount = 0;
         lapNumber++;
 
-        // End race + show results
-        if (lapNumber > maximumLaps)
-        {
-            // End race here
-            lapNumber = maximumLaps;
-            lapCountText.text = "Lap: " + lapNumber + "/" + maximumLaps;
-
-            positionReadoutText.text = posCounter.carsPassed switch
-            {
-                31 => "You finished 1st!",
-                32 => "You finished 2nd!",
-                33 => "You finished 3rd!",
-                34 => "You finished 4th!",
-                35 => "You finished 5th!",
-                36 => "You finished 6th!",
-                37 => "You finished 7th!",
-                38 => "You finished 8th!",
-                39 => "You finished 9th!",
-                40 => "You finished 10th!",
-                _ => "You finished?"
-            };
-
-            Time.timeScale = 0;
-            resultsPanel.SetActive(true);
-            EventSystem.current.SetSelectedGameObject(restartButton);
-        }
-        else
-            lapCountText.text = "Lap: " + lapNumber + "/" + maximumLaps;
+        lapCountText.text = "Lap: " + lapNumber;
     }
 }

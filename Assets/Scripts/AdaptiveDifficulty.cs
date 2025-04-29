@@ -5,7 +5,7 @@ public class AdaptiveDifficulty : MonoBehaviour
     public float currentDifficulty;
 
     private const int maximumDifficulty = 100, minimumDifficulty = 1;
-    private int startingPos, endingPos, posDifference;
+    private int startingPos = 10, endingPos, posDifference;
 
     public void CalculateDifficulty()
     {

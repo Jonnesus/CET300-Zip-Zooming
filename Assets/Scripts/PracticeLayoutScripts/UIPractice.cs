@@ -4,9 +4,9 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class UI : MonoBehaviour
+public class UIPractice : MonoBehaviour
 {
-    [SerializeField] private GameObject pauseScreen, resultsScreen, loadingScreen, resumeButton;
+    [SerializeField] private GameObject pauseScreen, loadingScreen, resumeButton;
     [SerializeField] private Slider slider;
 
     private void Update()
@@ -33,7 +33,6 @@ public class UI : MonoBehaviour
     public void RestartGame(string levelToLoad)
     {
         pauseScreen.SetActive(false);
-        resultsScreen.SetActive(false);
         loadingScreen.SetActive(true);
         StartCoroutine(LoadLevelASync(levelToLoad));
     }
@@ -41,7 +40,6 @@ public class UI : MonoBehaviour
     public void QuitGame(string levelToLoad)
     {
         pauseScreen.SetActive(false);
-        resultsScreen.SetActive(false);
         loadingScreen.SetActive(true);
         StartCoroutine(LoadLevelASync(levelToLoad));
     }

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: d1a8a5d2ce1cd9c4db1c459d0743ea03, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -679,7 +679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436170822519681056, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
       propertyPath: m_text
-      value: Tack Layout 2
+      value: Track Layout 2
       objectReference: {fileID: 0}
     - target: {fileID: 8436170822519681056, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
       propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
@@ -1493,7 +1493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1056779884296137787, guid: e7da12ff9324e2941a8f5697b97b6fcd, type: 3}
       propertyPath: m_text
-      value: Tutorial
+      value: Practice
       objectReference: {fileID: 0}
     - target: {fileID: 2666126877299473650, guid: e7da12ff9324e2941a8f5697b97b6fcd, type: 3}
       propertyPath: m_Navigation.m_SelectOnUp

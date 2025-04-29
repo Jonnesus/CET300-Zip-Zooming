@@ -25,6 +25,7 @@ public class MenuMainController : MonoBehaviour
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 0;
         EventSystem.current.SetSelectedGameObject(tutorialSelectButton);
     }
 
