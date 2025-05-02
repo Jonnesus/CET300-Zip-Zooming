@@ -8,6 +8,7 @@ public class UI : MonoBehaviour
 {
     [SerializeField] private GameObject pauseScreen, resultsScreen, loadingScreen, resumeButton;
     [SerializeField] private Slider slider;
+    [SerializeField] private AdaptiveDifficulty adaptiveDifficulty;
 
     private void Update()
     {
@@ -35,6 +36,7 @@ public class UI : MonoBehaviour
         pauseScreen.SetActive(false);
         resultsScreen.SetActive(false);
         loadingScreen.SetActive(true);
+        Time.timeScale = 1;
         StartCoroutine(LoadLevelASync(levelToLoad));
     }
 
@@ -43,6 +45,8 @@ public class UI : MonoBehaviour
         pauseScreen.SetActive(false);
         resultsScreen.SetActive(false);
         loadingScreen.SetActive(true);
+        Time.timeScale = 1;
+        SaveSystem.SaveDifficulty(adaptiveDifficulty);
         StartCoroutine(LoadLevelASync(levelToLoad));
     }
 

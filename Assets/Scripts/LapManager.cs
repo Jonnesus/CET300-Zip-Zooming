@@ -2,28 +2,35 @@ using UnityEngine;
 using System;
 using TMPro;
 using UnityEngine.EventSystems;
+using System.Collections;
+using OmniVehicleAi;
+using ArcadeVP;
 
 public class LapManager : MonoBehaviour
 {
-    [SerializeField] private PosCounter posCounter;
-    [SerializeField] private TextMeshProUGUI currentTimeText, bestTimeText, lapCountText, positionReadoutText;
-    [SerializeField] private GameObject resultsPanel, restartButton;
+    public int posCounter;
+    [SerializeField] private AdaptiveDifficulty adaptiveDifficulty;
+    [SerializeField] private TextMeshProUGUI currentTimeText, bestTimeText, lapCountText, positionReadoutText, countdownText;
+    [SerializeField] private GameObject resultsPanel, restartButton, countdownTextObject;
+    [SerializeField] private GameObject[] aiCars, checkpointPositionCollision;
     [SerializeField] private int maximumLaps = 3;
 
     private int minuteCount, secondCount, lapNumber = 1;
     private float milliCount, hiddenCurrentTime, hiddenBestTime;
-    private bool firstLap = true;
+    private bool firstLap = true, raceStarted = false;
     private string minutes, seconds;
 
     private void Start()
     {
         bestTimeText.text = "Best: --:--.--";
         lapCountText.text = "Lap: 1/" + maximumLaps;
+        StartCoroutine(CountdownTimer());
     }
 
     private void Update()
     {
-        Timer();
+        if (raceStarted)
+            Timer();
     }
 
     private void Timer()
@@ -87,26 +94,58 @@ public class LapManager : MonoBehaviour
             lapNumber = maximumLaps;
             lapCountText.text = "Lap: " + lapNumber + "/" + maximumLaps;
 
-            positionReadoutText.text = posCounter.carsPassed switch
+            positionReadoutText.text = posCounter switch
             {
-                31 => "You finished 1st!",
-                32 => "You finished 2nd!",
-                33 => "You finished 3rd!",
-                34 => "You finished 4th!",
-                35 => "You finished 5th!",
-                36 => "You finished 6th!",
-                37 => "You finished 7th!",
-                38 => "You finished 8th!",
-                39 => "You finished 9th!",
-                40 => "You finished 10th!",
-                _ => "You finished?"
+                10 => "You finished 1st!",
+                11 => "You finished 2nd!",
+                12 => "You finished 3rd!",
+                13 => "You finished 4th!",
+                14 => "You finished 5th!",
+                15 => "You finished 6th!",
+                16 => "You finished 7th!",
+                17 => "You finished 8th!",
+                18 => "You finished 9th!",
+                19 => "You finished 10th!",
+                _ => "You finished!"
             };
 
-            Time.timeScale = 0;
+            adaptiveDifficulty.CalculateDifficulty();
+
+            GameObject.Find("Player Car").GetComponent<InputManager_Player>().enabled = false;
             resultsPanel.SetActive(true);
             EventSystem.current.SetSelectedGameObject(restartButton);
         }
         else
+        {
+            foreach (GameObject gameObject in checkpointPositionCollision)
+            {
+                gameObject.GetComponent<CheckpointPositionCollision>().carsPassed = 0;
+            }
+
             lapCountText.text = "Lap: " + lapNumber + "/" + maximumLaps;
+        }
+    }
+
+    IEnumerator CountdownTimer()
+    {
+        yield return new WaitForSeconds(1f);
+        countdownText.text = "3";
+        yield return new WaitForSeconds(1f);
+        countdownText.text = "2";
+        yield return new WaitForSeconds(1f);
+        countdownText.text = "1";
+        yield return new WaitForSeconds(1f);
+        countdownText.text = "Go!";
+        raceStarted = true;
+
+        GameObject.Find("Player Car").GetComponent<InputManager_Player>().enabled = true;
+
+        foreach (GameObject gameObject in aiCars)
+        {
+            gameObject.GetComponent<ArcadeVP_inputProvider>().enabled = true;
+        }
+
+        yield return new WaitForSeconds(1f);
+        countdownTextObject.SetActive(false);
     }
 }

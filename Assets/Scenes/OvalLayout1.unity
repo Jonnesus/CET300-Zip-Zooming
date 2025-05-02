@@ -540,6 +540,142 @@ Transform:
   - {fileID: 124800732}
   m_Father: {fileID: 1837949848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &25118816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 25118817}
+  - component: {fileID: 25118819}
+  - component: {fileID: 25118818}
+  m_Layer: 5
+  m_Name: countdownDisplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &25118817
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25118816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987057818}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 100}
+  m_SizeDelta: {x: 500, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &25118818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25118816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Loading...
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 72
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &25118819
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25118816}
+  m_CullTransparentMesh: 1
 --- !u!1 &27364626
 GameObject:
   m_ObjectHideFlags: 0
@@ -5739,10 +5875,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2001756357}
     m_Modifications:
     - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: totalLaps
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: splineContainer
       value: 
       objectReference: {fileID: 1594667792}
@@ -5790,39 +5922,24 @@ PrefabInstance:
       propertyPath: AiMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: roadWidth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: sensorLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: stoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: m_Name
-      value: AI Car (8)
+      value: AI_4
       objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 8693271241674942266, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+      propertyPath: adaptiveDifficulty
+      value: 
+      objectReference: {fileID: 1789417767}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+--- !u!1 &315232870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+  m_PrefabInstance: {fileID: 315232869}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &317039010
 GameObject:
   m_ObjectHideFlags: 0
@@ -10281,10 +10398,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2001756357}
     m_Modifications:
     - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: totalLaps
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: splineContainer
       value: 
       objectReference: {fileID: 1594667792}
@@ -10332,39 +10445,24 @@ PrefabInstance:
       propertyPath: AiMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: roadWidth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: sensorLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: stoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: m_Name
-      value: AI Car (12)
+      value: AI_8
       objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 8693271241674942266, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+      propertyPath: adaptiveDifficulty
+      value: 
+      objectReference: {fileID: 1789417767}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+--- !u!1 &527098354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+  m_PrefabInstance: {fileID: 527098353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &530886746
 GameObject:
   m_ObjectHideFlags: 0
@@ -10966,10 +11064,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2001756357}
     m_Modifications:
     - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: totalLaps
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: splineContainer
       value: 
       objectReference: {fileID: 1594667792}
@@ -11017,39 +11111,24 @@ PrefabInstance:
       propertyPath: AiMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: roadWidth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: sensorLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: stoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: m_Name
-      value: AI Car (7)
+      value: AI_3
       objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 8693271241674942266, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+      propertyPath: adaptiveDifficulty
+      value: 
+      objectReference: {fileID: 1789417767}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+--- !u!1 &557171739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+  m_PrefabInstance: {fileID: 557171738}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &557179931
 GameObject:
   m_ObjectHideFlags: 0
@@ -18200,6 +18279,7 @@ GameObject:
   - component: {fileID: 919206404}
   - component: {fileID: 919206403}
   - component: {fileID: 919206402}
+  - component: {fileID: 919206405}
   m_Layer: 0
   m_Name: Checkpoint 5
   m_TagString: Checkpoint
@@ -18296,6 +18376,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919206400}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &919206405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919206400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34849c301fa82584d93e3486cd3513cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carsPassed: 0
+  lapManager: {fileID: 1789417765}
 --- !u!1 &919445463
 GameObject:
   m_ObjectHideFlags: 0
@@ -19760,6 +19854,7 @@ RectTransform:
   - {fileID: 1036734967}
   - {fileID: 987523615}
   - {fileID: 1231456082}
+  - {fileID: 25118817}
   m_Father: {fileID: 206758913}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -21508,10 +21603,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2001756357}
     m_Modifications:
     - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: totalLaps
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: splineContainer
       value: 
       objectReference: {fileID: 1594667792}
@@ -21559,39 +21650,24 @@ PrefabInstance:
       propertyPath: AiMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: roadWidth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: sensorLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: stoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: m_Name
-      value: AI Car (6)
+      value: AI_2
       objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 8693271241674942266, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+      propertyPath: adaptiveDifficulty
+      value: 
+      objectReference: {fileID: 1789417767}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+--- !u!1 &1069607250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+  m_PrefabInstance: {fileID: 1069607249}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1070049560
 GameObject:
   m_ObjectHideFlags: 0
@@ -22639,10 +22715,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2001756357}
     m_Modifications:
     - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: totalLaps
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: splineContainer
       value: 
       objectReference: {fileID: 1594667792}
@@ -22690,39 +22762,24 @@ PrefabInstance:
       propertyPath: AiMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: roadWidth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: sensorLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: stoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: m_Name
-      value: AI Car (5)
+      value: AI_1
       objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 8693271241674942266, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+      propertyPath: adaptiveDifficulty
+      value: 
+      objectReference: {fileID: 1789417767}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+--- !u!1 &1122696459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+  m_PrefabInstance: {fileID: 1122696458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1124617368
 GameObject:
   m_ObjectHideFlags: 0
@@ -24347,6 +24404,7 @@ GameObject:
   - component: {fileID: 1214999972}
   - component: {fileID: 1214999971}
   - component: {fileID: 1214999970}
+  - component: {fileID: 1214999973}
   m_Layer: 0
   m_Name: Checkpoint 4
   m_TagString: Checkpoint
@@ -24443,6 +24501,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214999968}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1214999973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214999968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34849c301fa82584d93e3486cd3513cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carsPassed: 0
+  lapManager: {fileID: 1789417765}
 --- !u!4 &1215249150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4558988267255469955, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
@@ -25188,10 +25260,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2001756357}
     m_Modifications:
     - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: totalLaps
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: splineContainer
       value: 
       objectReference: {fileID: 1594667792}
@@ -25239,39 +25307,24 @@ PrefabInstance:
       propertyPath: AiMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: roadWidth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: sensorLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: stoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: m_Name
-      value: AI Car (10)
+      value: AI_6
       objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 8693271241674942266, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+      propertyPath: adaptiveDifficulty
+      value: 
+      objectReference: {fileID: 1789417767}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+--- !u!1 &1262135872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+  m_PrefabInstance: {fileID: 1262135871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1268418463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25968,6 +26021,7 @@ GameObject:
   - component: {fileID: 1315795719}
   - component: {fileID: 1315795718}
   - component: {fileID: 1315795717}
+  - component: {fileID: 1315795720}
   m_Layer: 0
   m_Name: Checkpoint 2
   m_TagString: Checkpoint
@@ -26064,6 +26118,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315795715}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1315795720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315795715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34849c301fa82584d93e3486cd3513cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carsPassed: 0
+  lapManager: {fileID: 1789417765}
 --- !u!1 &1317303678
 GameObject:
   m_ObjectHideFlags: 0
@@ -27043,10 +27111,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2001756357}
     m_Modifications:
     - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: totalLaps
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: splineContainer
       value: 
       objectReference: {fileID: 1594667792}
@@ -27094,39 +27158,24 @@ PrefabInstance:
       propertyPath: AiMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: roadWidth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: sensorLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: stoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: m_Name
-      value: AI Car (13)
+      value: AI_9
       objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 8693271241674942266, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+      propertyPath: adaptiveDifficulty
+      value: 
+      objectReference: {fileID: 1789417767}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+--- !u!1 &1389912708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+  m_PrefabInstance: {fileID: 1389912707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1390803722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29338,10 +29387,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2001756357}
     m_Modifications:
     - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: totalLaps
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: splineContainer
       value: 
       objectReference: {fileID: 1594667792}
@@ -29389,39 +29434,24 @@ PrefabInstance:
       propertyPath: AiMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: roadWidth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: sensorLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: stoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: m_Name
-      value: AI Car (9)
+      value: AI_5
       objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 8693271241674942266, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+      propertyPath: adaptiveDifficulty
+      value: 
+      objectReference: {fileID: 1789417767}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+--- !u!1 &1525093794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+  m_PrefabInstance: {fileID: 1525093793}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1531528900
 GameObject:
   m_ObjectHideFlags: 0
@@ -29962,10 +29992,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1554113869}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a31284ad6ded2ff428bae4a95eb227ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 34849c301fa82584d93e3486cd3513cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   carsPassed: 0
+  lapManager: {fileID: 1789417765}
 --- !u!1 &1556580304
 GameObject:
   m_ObjectHideFlags: 0
@@ -31668,6 +31699,7 @@ GameObject:
   - component: {fileID: 1599116132}
   - component: {fileID: 1599116131}
   - component: {fileID: 1599116130}
+  - component: {fileID: 1599116133}
   m_Layer: 0
   m_Name: Checkpoint 1
   m_TagString: Checkpoint
@@ -31764,6 +31796,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599116128}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1599116133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599116128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34849c301fa82584d93e3486cd3513cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carsPassed: 0
+  lapManager: {fileID: 1789417765}
 --- !u!1 &1600973641
 GameObject:
   m_ObjectHideFlags: 0
@@ -34802,6 +34848,7 @@ GameObject:
   - component: {fileID: 1733519511}
   - component: {fileID: 1733519510}
   - component: {fileID: 1733519509}
+  - component: {fileID: 1733519512}
   m_Layer: 0
   m_Name: Checkpoint 3
   m_TagString: Checkpoint
@@ -34898,6 +34945,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733519507}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1733519512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733519507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34849c301fa82584d93e3486cd3513cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carsPassed: 0
+  lapManager: {fileID: 1789417765}
 --- !u!1 &1736075418
 GameObject:
   m_ObjectHideFlags: 0
@@ -36009,13 +36070,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9c36b5a745cc14eaa721b49e41131c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posCounter: {fileID: 1554113874}
+  posCounter: 0
+  adaptiveDifficulty: {fileID: 1789417767}
   currentTimeText: {fileID: 116672284}
   bestTimeText: {fileID: 191163593}
   lapCountText: {fileID: 2070506368}
   positionReadoutText: {fileID: 644639803}
+  countdownText: {fileID: 25118818}
   resultsPanel: {fileID: 987523614}
   restartButton: {fileID: 422823038}
+  countdownTextObject: {fileID: 25118816}
+  aiCars:
+  - {fileID: 1122696459}
+  - {fileID: 1069607250}
+  - {fileID: 557171739}
+  - {fileID: 315232870}
+  - {fileID: 1525093794}
+  - {fileID: 1262135872}
+  - {fileID: 2013882559}
+  - {fileID: 527098354}
+  - {fileID: 1389912708}
+  checkpointPositionCollision:
+  - {fileID: 1599116128}
+  - {fileID: 1315795715}
+  - {fileID: 1733519507}
+  - {fileID: 1214999968}
+  - {fileID: 919206400}
+  - {fileID: 1554113869}
   maximumLaps: 3
 --- !u!4 &1789417766
 Transform:
@@ -36044,7 +36125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a18fb83ad1d7b9b4e9b1ee4147479955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDifficulty: 0
+  currentDifficulty: 50
+  lapManager: {fileID: 1789417765}
 --- !u!114 &1789417768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36062,6 +36144,7 @@ MonoBehaviour:
   loadingScreen: {fileID: 1231456081}
   resumeButton: {fileID: 2050929260}
   slider: {fileID: 1179220896}
+  adaptiveDifficulty: {fileID: 1789417767}
 --- !u!1 &1789868810
 GameObject:
   m_ObjectHideFlags: 0
@@ -41020,10 +41103,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2001756357}
     m_Modifications:
     - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: totalLaps
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 305967778145560352, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: splineContainer
       value: 
       objectReference: {fileID: 1594667792}
@@ -41071,39 +41150,24 @@ PrefabInstance:
       propertyPath: AiMode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: roadWidth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: sensorLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8491499836428536886, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: stoppingDistance
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
       propertyPath: m_Name
-      value: AI Car (11)
+      value: AI_7
       objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 8693271241674942266, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+      propertyPath: adaptiveDifficulty
+      value: 
+      objectReference: {fileID: 1789417767}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+--- !u!1 &2013882559 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8560189594756722094, guid: 8f39fd6f950b23c40915ff6b4b1f8c90, type: 3}
+  m_PrefabInstance: {fileID: 2013882558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2016275358
 GameObject:
   m_ObjectHideFlags: 0
@@ -44236,30 +44300,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5142674569488756492, guid: 11834be1c5ef8584aad4635147ea0001, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0000009536743
-      objectReference: {fileID: 0}
-    - target: {fileID: 5142674569488756492, guid: 11834be1c5ef8584aad4635147ea0001, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5142674569488756492, guid: 11834be1c5ef8584aad4635147ea0001, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.12761535
-      objectReference: {fileID: 0}
-    - target: {fileID: 5142674569488756492, guid: 11834be1c5ef8584aad4635147ea0001, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5142674569488756492, guid: 11834be1c5ef8584aad4635147ea0001, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
     - target: {fileID: 6514429697848915346, guid: 11834be1c5ef8584aad4635147ea0001, type: 3}
       propertyPath: lapManager
       value: 
       objectReference: {fileID: 1789417765}
+    - target: {fileID: 6620744192264097286, guid: 11834be1c5ef8584aad4635147ea0001, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -34,6 +34,7 @@ public class UIPractice : MonoBehaviour
     {
         pauseScreen.SetActive(false);
         loadingScreen.SetActive(true);
+        Time.timeScale = 1;
         StartCoroutine(LoadLevelASync(levelToLoad));
     }
 
@@ -41,6 +42,7 @@ public class UIPractice : MonoBehaviour
     {
         pauseScreen.SetActive(false);
         loadingScreen.SetActive(true);
+        Time.timeScale = 1;
         StartCoroutine(LoadLevelASync(levelToLoad));
     }
 

@@ -20598,7 +20598,7 @@ GameObject:
   - component: {fileID: 8248599043608409765}
   m_Layer: 7
   m_Name: AI Car
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20659,9 +20659,9 @@ MonoBehaviour:
   drivableSurface:
     serializedVersion: 2
     m_Bits: 64
-  MaxSpeed: 100
+  MaxSpeed: 75
   accelaration: 10
-  turn: 10
+  turn: 7
   gravity: 5
   downforce: 5
   AirControl: 0
@@ -20750,6 +20750,7 @@ MonoBehaviour:
   MaxPitch: 3
   SkidSound: {fileID: 7916553300575024576}
   skidWidth: 0.13985014
+  adaptiveDifficulty: {fileID: 0}
 --- !u!54 &345698983235723650
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21069,7 +21070,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8560189594756722094}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1db228188ecfc394792d30444eda2ea7, type: 3}
   m_Name: 

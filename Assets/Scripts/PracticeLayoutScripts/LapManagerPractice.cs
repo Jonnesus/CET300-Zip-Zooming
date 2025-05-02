@@ -1,27 +1,30 @@
 using UnityEngine;
 using System;
 using TMPro;
-using UnityEngine.EventSystems;
+using System.Collections;
+using ArcadeVP;
 
 public class LapManagerPractice : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI currentTimeText, bestTimeText, lapCountText;
-    [SerializeField] private int maximumLaps = 999999;
+    [SerializeField] private TextMeshProUGUI currentTimeText, bestTimeText, lapCountText, countdownText;
+    [SerializeField] private GameObject countdownTextObject;
 
     private int minuteCount, secondCount, lapNumber = 1;
     private float milliCount, hiddenCurrentTime, hiddenBestTime;
-    private bool firstLap = true;
+    private bool firstLap = true, raceStarted = false;
     private string minutes, seconds;
 
     private void Start()
     {
         bestTimeText.text = "Best: --:--.--";
         lapCountText.text = "Lap: 1";
+        StartCoroutine(CountdownTimer());
     }
 
     private void Update()
     {
-        Timer();
+        if (raceStarted)
+            Timer();
     }
 
     private void Timer()
@@ -79,5 +82,21 @@ public class LapManagerPractice : MonoBehaviour
         lapNumber++;
 
         lapCountText.text = "Lap: " + lapNumber;
+    }
+
+    IEnumerator CountdownTimer()
+    {
+        yield return new WaitForSeconds(1f);
+        countdownText.text = "3";
+        yield return new WaitForSeconds(1f);
+        countdownText.text = "2";
+        yield return new WaitForSeconds(1f);
+        countdownText.text = "1";
+        yield return new WaitForSeconds(1f);
+        countdownText.text = "Go!";
+        raceStarted = true;
+        GameObject.Find("Player Car").GetComponent<InputManager_Player>().enabled = true;
+        yield return new WaitForSeconds(1f);
+        countdownTextObject.SetActive(false);
     }
 }

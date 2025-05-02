@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ArcadeVP
 {
-    public class ArcadeVehicleController : MonoBehaviour
+    public class PlayerVehicleController : MonoBehaviour
     {
         public enum groundCheck { rayCast, sphereCaste };
         public enum MovementMode { Velocity, AngularVelocity };
@@ -47,9 +47,6 @@ namespace ArcadeVP
         [HideInInspector]
         public float skidWidth;
 
-        [Header("References")]
-        [SerializeField] private AdaptiveDifficulty adaptiveDifficulty;
-
         private float radius, steeringInput, accelerationInput, brakeInput;
         private Vector3 origin;
 
@@ -60,8 +57,6 @@ namespace ArcadeVP
             {
                 Physics.defaultMaxAngularSpeed = 100;
             }
-
-            MaxSpeed = MaxSpeed * (1 + adaptiveDifficulty.currentDifficulty / 100);
         }
 
         private void Update()
