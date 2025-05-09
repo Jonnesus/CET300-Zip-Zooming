@@ -9,6 +9,7 @@ Accelerate: W\
 Brake: S\
 Steer: A/D\
 Handbrake: Space\
+Change Camera: C\
 Pause: Escape\
 Menu Confirm: Enter
 
@@ -17,7 +18,8 @@ Accelerate: Right Trgger\
 Brake: Left Trigger\
 Steer: Left Thumbstick\
 Handbrake: East Button\
-Pause: Select\
+Change Camera: North Button\
+Pause: West Button\
 Menu Confirm: South Button
 
 ---

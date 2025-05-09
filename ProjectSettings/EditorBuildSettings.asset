@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TutorialLevel.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainMenu.unity
+    guid: 7fea7007936a66e40853625d931dd4bb
+  - enabled: 1
+    path: Assets/Scenes/OvalTutorialLayout.unity
+    guid: 5eb2232e1d2dd924382605e609e37280
+  - enabled: 1
+    path: Assets/Scenes/OvalLayout1.unity
+    guid: 8f81a0c717db8454497e5bfc47eb96bd
+  - enabled: 1
+    path: Assets/Scenes/OvalLayout2.unity
+    guid: 2dd2172ad8f535a41a75a27e3e2f2ccb
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f7aac9b9d6a6ce14d980c02ff4ebee28, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

@@ -27,6 +27,11 @@ namespace ArcadeVP
         public AnimationCurve frictionCurve;
         public AnimationCurve turnCurve;
         public PhysicsMaterial frictionMaterial;
+
+        [Header("Cameras")]
+        [SerializeField] private GameObject chaseCam;
+        [SerializeField] private GameObject topCam;
+
         [Header("Visuals")]
         public Transform BodyMesh;
         public Transform[] FrontWheels = new Transform[2];
@@ -63,6 +68,24 @@ namespace ArcadeVP
         {
             Visuals();
             AudioManager();
+            CameraCheck();
+        }
+
+        private void CameraCheck()
+        {
+            if (Input.GetButtonDown("Fire2"))
+            {
+                if (chaseCam.activeSelf)
+                {
+                    chaseCam.SetActive(false);
+                    topCam.SetActive(true);
+                }
+                else
+                {
+                    topCam.SetActive(false);
+                    chaseCam.SetActive(true);
+                }
+            }
         }
 
         public void ProvideInputs(float _steeringInput, float _accelarationInput, float _brakeInput)

@@ -17,7 +17,7 @@ public class UI : MonoBehaviour
 
     private void PauseGame()
     {
-        if (Input.GetButton("Cancel"))
+        if (Input.GetButtonDown("Cancel"))
         {
             pauseScreen.SetActive(true);
             Time.timeScale = 0;

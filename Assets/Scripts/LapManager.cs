@@ -25,6 +25,7 @@ public class LapManager : MonoBehaviour
         bestTimeText.text = "Best: --:--.--";
         lapCountText.text = "Lap: 1/" + maximumLaps;
         StartCoroutine(CountdownTimer());
+        Application.targetFrameRate = 60;
     }
 
     private void Update()

@@ -640,7 +640,7 @@ PrefabInstance:
     - target: {fileID: 6865420263278600425, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
       value: 
-      objectReference: {fileID: 412581788}
+      objectReference: {fileID: 937920081}
     - target: {fileID: 6865420263278600425, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
       propertyPath: m_Navigation.m_SelectOnLeft
       value: 
@@ -655,19 +655,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6865420263278600425, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6865420263278600425, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1352835190}
     - target: {fileID: 6865420263278600425, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6865420263278600425, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartGame
+      value: EnterLayout2
       objectReference: {fileID: 0}
     - target: {fileID: 6865420263278600425, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MenuMainController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6865420263278600425, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: OvalLayout2
       objectReference: {fileID: 0}
     - target: {fileID: 6865420263278600425, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -806,22 +814,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
---- !u!1 &412581787 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5756421308538634100, guid: e7da12ff9324e2941a8f5697b97b6fcd, type: 3}
-  m_PrefabInstance: {fileID: 1823941326}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &412581788 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7079403038024162495, guid: e7da12ff9324e2941a8f5697b97b6fcd, type: 3}
-  m_PrefabInstance: {fileID: 1823941326}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 412581787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &449439573 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5276246818968118684, guid: 454010d09f63d4a4aaf9a2a9be4db28c, type: 3}
@@ -1205,11 +1197,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7289621c0b25eeb48a27ce12896af14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsMenuPanel_1: {fileID: 0}
-  optionsMenuPanel_2: {fileID: 0}
-  optionsCloseButton_1: {fileID: 0}
-  optionsCloseButton_2: {fileID: 0}
-  optionsOpenButton: {fileID: 412581787}
   tutorialSelectButton: {fileID: 1621826371}
   mainMenuPanel: {fileID: 2072104827}
   loadingScreen: {fileID: 587618114}
@@ -1533,12 +1520,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2780598638084733578, guid: e7da12ff9324e2941a8f5697b97b6fcd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -135
+      value: -95
       objectReference: {fileID: 0}
     - target: {fileID: 3524218881531314175, guid: e7da12ff9324e2941a8f5697b97b6fcd, type: 3}
       propertyPath: m_Navigation.m_SelectOnUp
       value: 
-      objectReference: {fileID: 412581788}
+      objectReference: {fileID: 449439574}
     - target: {fileID: 3524218881531314175, guid: e7da12ff9324e2941a8f5697b97b6fcd, type: 3}
       propertyPath: m_Navigation.m_SelectOnDown
       value: 
@@ -1688,7 +1675,8 @@ PrefabInstance:
       value: -95
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5756421308538634100, guid: e7da12ff9324e2941a8f5697b97b6fcd, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7742344869850074119, guid: e7da12ff9324e2941a8f5697b97b6fcd, type: 3}
       insertIndex: 2
